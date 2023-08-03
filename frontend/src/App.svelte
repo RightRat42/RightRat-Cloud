@@ -1,12 +1,14 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
-    import LinkItem from './lib/Link-item.svelte';
+    import LinkItem from './lib/Storage/Link-Item.svelte';
+    import Tag from './lib/Storage/tag.svelte';
+    import TextItem from './lib/Storage/Text-Item.svelte';
+
+
+    let module: string = "LinkItem";
 </script>
 
 <main>
-  <h1>test</h1>
+  <h2>View Module: { module }</h2>
 
   <div class="card">
     <LinkItem />

@@ -1,23 +1,26 @@
 <script lang="ts">
+    import Tag from "./tag.svelte";
     let title:string = "Link title..."
-    let url:string = "Link url..."
-    let tags:string[] = []
+    let url:string = "g.co"
+    let tags:string[] = ["cool", "test", "test4"]
 </script>
 
-<div class="link-item">
-    <div class="link-item-header">
+<div class="item">
+    <div class="item-header">
         <h3 class="link-title">{ title }</h3>
     </div>
-    <div class="link-item-body">
-        <p class="link-url">{ url }</p>
+    <div class="item-body">
+        <a class="link-url" href="https://{ url }">{ url }</a>
     </div>
-    <div class="link-item-footer">
-
+    <div class="item-footer">
+        {#each tags as x}
+            <Tag tagname="{x}"/>
+        {/each}
     </div>
 </div>
 
 <style>
-    .link-item {
+    .item {
         width: 400px;
         height: 150px;
         flex-shrink: 0;
@@ -27,7 +30,7 @@
         background: #FFF;
     }
 
-    .link-item-header {
+    .item-header {
         position: relative;
         
         width: 400px;
@@ -84,16 +87,21 @@
         text-decoration-line: underline;
         text-align: left;
     }
-    .link-item-body {
+    .item-body {
         height: 50px;
         width: 400px;
         margin: 0;
     }
 
-    .link-item-footer {
+    .item-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         width: 400px;
         height: 50px;
         flex-shrink: 0;
+        overflow: scroll;
+        scrollbar-width: none;
 
         border-radius: 0px 0px 24px 24px;
         background: #424284;
