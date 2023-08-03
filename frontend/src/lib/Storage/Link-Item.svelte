@@ -1,11 +1,14 @@
 <script lang="ts">
+    import { getContext } from "svelte";
     import Tag from "./tag.svelte";
-    let title:string = "Link title..."
-    let url:string = "g.co"
-    let tags:string[] = ["cool", "test", "test4"]
+    // export let id = item.items[0].id
+    export let title:string = "Link title...";
+    export let url:string = "g.co";
+    export let tags:string[] = ["cool", "test", "test4"];
 </script>
 
 <div class="item">
+    <a href="https://{ url }">
     <div class="item-header">
         <h3 class="link-title">{ title }</h3>
     </div>
@@ -17,6 +20,7 @@
             <Tag tagname="{x}"/>
         {/each}
     </div>
+    </a>
 </div>
 
 <style>
@@ -65,8 +69,7 @@
 
     .link-url {
         position: relative;
-        left: 25px;
-        margin: 0px;
+        margin-left: 25px;
         
 
         display: flex;
@@ -86,6 +89,7 @@
         line-height: normal;
         text-decoration-line: underline;
         text-align: left;
+        
     }
     .item-body {
         height: 50px;
