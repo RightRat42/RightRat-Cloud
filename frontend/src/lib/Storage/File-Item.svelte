@@ -24,7 +24,8 @@
 
 <style>
     .item {
-        width: 400px;
+        width: 25vw;
+        min-width: 250px;
         height: 150px;
         flex-shrink: 0;
         
@@ -36,7 +37,8 @@
     .item-header {
         position: relative;
         
-        width: 400px;
+        width: inherit;
+        min-width: inherit;
         height: 50px;
         flex-shrink: 0;
 
@@ -46,11 +48,10 @@
 
     .file-title {
         position: relative;
-        left: 50px;
         margin: 0px;
 
         display: flex;
-        width: 300px;
+        width: max(calc(100vw*3/16), 200);
         height: 50px;
         flex-direction: column;
         justify-content: center;
@@ -68,19 +69,21 @@
 
     .file-link {
         position: relative;
-        margin: 0;
-        margin-left: 25px;
-        margin-right: 25px;
+        margin: 0px;
+        margin-left: max(calc(100vw/40), 25px);
+        margin-right: max(calc(100vw/40), 25px);
         
 
         display: flex;
-        width: 350px;
+        width: calc(800vw/40);
+        min-width: 200px;
         height: 50px;
         flex-direction: column;
         justify-content: center;
         flex-shrink: 0;
 
         overflow: hidden;
+        white-space: nowrap;
         color: #844242;
         text-overflow: ellipsis;
         font-family: Inter;
@@ -94,7 +97,8 @@
     }
     .item-body {
         height: 50px;
-        width: 400px;
+        width: inherit;
+        min-width: inherit;
         margin: 0;
     }
 
@@ -102,7 +106,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 400px;
+        width: inherit;
+        min-width: inherit;
         height: 50px;
         flex-shrink: 0;
         overflow: scroll;

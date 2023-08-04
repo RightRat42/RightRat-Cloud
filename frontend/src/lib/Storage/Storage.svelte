@@ -101,6 +101,7 @@
         width: 100vw;
         flex-shrink: 0;
         min-width: 450px;
+        justify-content: space-evenly;
 
         border-radius: 25px;
         border: 2px solid #000;

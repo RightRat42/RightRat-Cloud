@@ -21,7 +21,8 @@
 
 <style>
     .item {
-        width: 400px;
+        min-width: 250px;
+        width: 25vw;
         height: 200px;
         flex-shrink: 0;
         
@@ -33,7 +34,8 @@
     .item-header {
         position: relative;
         
-        width: 400px;
+        width: inherit;
+        min-width: inherit;
         height: 50px;
         flex-shrink: 0;
 
@@ -43,11 +45,10 @@
 
     .text-title {
         position: relative;
-        left: 50px;
         margin: 0px;
 
         display: flex;
-        width: 300px;
+        width: max(calc(100vw*3/16), 200);
         height: 50px;
         flex-direction: column;
         justify-content: center;
@@ -66,10 +67,13 @@
     .text {
         position: relative;
         margin: 0px;
+        margin-left: max(calc(100vw/40), 25px);
+        margin-right: max(calc(100vw/40), 25px);
         
 
         display:inline-block;
-        width: 350px;
+        width: calc(800vw/40);
+        min-width: 200px;
         height: 100px;
         flex-direction: column;
         justify-content: center;
@@ -90,7 +94,8 @@
     }
     .item-body {
         height: 100px;
-        width: 400px;
+        width: inherit;
+        min-width: inherit;
         margin: 0;
     }
 
@@ -98,7 +103,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 400px;
+        width: inherit;
+        min-width: inherit;
         height: 50px;
         flex-shrink: 0;
         overflow: scroll;
