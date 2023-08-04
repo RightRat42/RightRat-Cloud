@@ -1,17 +1,17 @@
 <script lang="ts">
     import Tag from "./Tag.svelte";
-    export let title:string = "Link title...";
-    export let content:string = "g.co";
-    export let tags:string[] = ["cool", "test", "test4"];
+    export let title:string = "File title...";
+    export let content:string = "";
+    export let tags:string[] = ["nice", "picture", "testpic"];
 </script>
 
 <div class="item">
-    <a href="https://{ content }" target="_blank">
+    <a href="../src/assets/{ content }" target="_blank">
     <div class="item-header">
-        <h3 class="link-title">{ title }</h3>
+        <h3 class="file-title">{ title }</h3>
     </div>
     <div class="item-body">
-        <p class="link-url" >{ content }</p>
+        <p class="file-link" >{ content }</p>
     </div>
     <div class="item-footer">
         {#each tags as x}
@@ -28,7 +28,7 @@
         flex-shrink: 0;
         
         border-radius: 25px;
-        border: 1px solid #00A;
+        border: 1px solid #A00;
         background: #FFF;
     }
 
@@ -40,10 +40,10 @@
         flex-shrink: 0;
 
         border-radius: 25px 25px 0px 0px;
-        background: #BBF;
+        background: #FBB;
     }
 
-    .link-title {
+    .file-title {
         position: relative;
         left: 50px;
         margin: 0px;
@@ -65,9 +65,11 @@
         line-height: normal;        
     }
 
-    .link-url {
+    .file-link {
         position: relative;
+        margin: 0;
         margin-left: 25px;
+        margin-right: 25px;
         
 
         display: flex;
@@ -78,7 +80,7 @@
         flex-shrink: 0;
 
         overflow: hidden;
-        color: #424284;
+        color: #844242;
         text-overflow: ellipsis;
         font-family: Inter;
         font-size: 20px;
@@ -106,6 +108,6 @@
         scrollbar-width: none;
 
         border-radius: 0px 0px 24px 24px;
-        background: #424284;
+        background: #844242;
     }
 </style>
