@@ -67,6 +67,7 @@
 
     .link-url {
         position: relative;
+        margin: 0px;
         margin-left: 25px;
         
 
