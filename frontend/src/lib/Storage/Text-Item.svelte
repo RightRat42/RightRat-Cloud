@@ -75,10 +75,10 @@
         justify-content: center;
         flex-shrink: 0;
 
-        overflow: scroll;
         scrollbar-width: none;
         color: #428442;
         text-overflow: ellipsis;
+        overflow: scroll;
         white-space: normal;
         font-family: Inter;
         font-size: 20px;

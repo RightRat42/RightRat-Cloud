@@ -1,8 +1,9 @@
 <script lang="ts">
     import Tag from "./Tag.svelte";
     export let title:string = "File title...";
-    export let content:string = "";
+    export let content:string = "00000000-0000-0000-0000-000000000000";
     export let tags:string[] = ["nice", "picture", "testpic"];
+        
 </script>
 
 <div class="item">
