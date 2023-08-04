@@ -6,7 +6,7 @@
 </script>
 
 <div class="item">
-    <a href="../src/assets/{ content }" target="_blank">
+    <a href="../src/assets/img/{ content }" target="_blank">
     <div class="item-header">
         <h3 class="file-title">{ title }</h3>
     </div>
@@ -107,7 +107,7 @@
         overflow: scroll;
         scrollbar-width: none;
 
-        border-radius: 0px 0px 24px 24px;
+        border-radius: 0px 0px 25px 25px;
         background: #844242;
     }
 </style>
