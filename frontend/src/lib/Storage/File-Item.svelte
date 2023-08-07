@@ -3,11 +3,12 @@
     export let title:string = "File title...";
     export let content:string = "00000000-0000-0000-0000-000000000000";
     export let tags:string[] = ["nice", "picture", "testpic"];
+    export let fileLink = "../src/assets/img/tooth-trollface.jpg"
         
 </script>
 
 <div class="item">
-    <a href="../src/assets/img/{ content }" target="_blank">
+    <a href="{ fileLink }" target="_blank">
     <div class="item-header">
         <h3 class="file-title">{ title }</h3>
     </div>

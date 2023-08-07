@@ -1,7 +1,6 @@
 {
     "items": [
         {
-            "uuid": "085c2020-0e5b-4ad4-a542-616890cdbec8",
             "id": "1",
             "type": "link",
             "title": "Link title",
@@ -12,7 +11,6 @@
         },
         
         {
-            "uuid": "ef193d4d-c741-447d-b1a7-91df07a9db54",
             "id": "2",
             "type": "text",
             "title": "Text title",
@@ -34,7 +32,6 @@
         },
         
         {
-            "uuid": "43e1f448-8073-4c92-b5e9-315478c9e290",
             "id": "4",
             "type": "text",
             "title": "Text title2",
@@ -56,7 +53,6 @@
         },
 
         {
-            "uuid": "72707121-1f01-4c9d-88e4-040fd83fe85f",
             "id": "6",
             "type": "link",
             "title": "Link title2",
