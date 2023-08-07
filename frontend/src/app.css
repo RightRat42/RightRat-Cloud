@@ -23,6 +23,10 @@ body {
   min-height: 100vh;
 }
 
+*::-webkit-scrollbar{
+  display: none;
+}
+
 .card {
   padding: 2em;
 }

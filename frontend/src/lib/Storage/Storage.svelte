@@ -1,5 +1,5 @@
 <script lang="ts">
-    import data from "../../assets/data.json";
+    import data from "../../../../backend/src/assets/data.json";
     import FileItem from "./File-Item.svelte";
     import LinkItem from "./Link-Item.svelte";
     import TextItem from "./Text-Item.svelte";
@@ -64,7 +64,8 @@
         color: #000;
         text-align: center;
         font-family: Inter;
-        font-size: 50px;
+        line-height: normal;
+        font-size: min(9vw, 50px);
         font-style: normal;
         font-weight: 700;
         line-height: normal;
